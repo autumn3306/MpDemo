@@ -19,4 +19,11 @@ class MpDemoApplicationTests {
         System.out.println(users);
     }
 
+    @Test
+    public  void TestAdd(){
+      User user = new User(null,"小李",25,"1234@163.com");
+        int insert = userMapper.insert(user);
+        System.out.println(insert);
+    }
+
 }
