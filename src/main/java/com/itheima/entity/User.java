@@ -23,4 +23,9 @@ public class User {
     @TableField(fill = FieldFill.INSERT_UPDATE)
     private Date updateTime; //update_time
 
+    //逻辑删除
+    @TableField(fill = FieldFill.INSERT)
+    @TableLogic
+    private Integer deleted;
+
 }
